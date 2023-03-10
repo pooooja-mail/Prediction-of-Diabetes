@@ -1,0 +1,77 @@
+<html>
+<head>
+<style>
+body
+{
+  background-color: lightblue;
+}
+h2
+{
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+div
+{
+	font-size: 20px;
+	color: white;
+	margin-left: 38%;
+}
+.submit
+{
+	background-color: grey;
+	color: white;
+	text-align: center;
+	border: none;
+	text-decoration: none;
+	display: inline-block;
+	padding: 6px 15px;
+	font-size: 18px;
+	font-weight: bold;
+	align: center;
+	margin-left: 20%;
+}
+</style>
+</head>
+
+<body>
+<h2>Diabetes Predictor Panel</h2>
+<div>
+  <form action="Result.html" method="post" onsubmit="return validateForm()">
+    <label for="UserID">User ID:&nbsp</label>
+    <input type="email" id="ID" name="UserID" size="24px" required>
+<br/><br/>
+	<label for="Age">Age:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+    <input type="number" id="Age" name="Age" size="24px" required>
+<br/><br/>
+	<label for="Glucose">Glucose:&nbsp</label>
+    <input type="number" id="Glucose" name="Glucose" size="24px" step=".01" required>
+<br/><br/>
+	<label for="Insulin">Insulin:&nbsp&nbsp&nbsp</label>
+    <input type="number" id="Insulin" name="Insulin" size="24px" step=".01" required>
+<br/><br/>
+	<label for="Blood Pressure">Blood Pressure:&nbsp&nbsp&nbsp</label>
+    <input type="number" id="BP" name="Blood Pressure" size="15px" required>
+<br/><br/>
+	<label for="Skin Thickness">Skin Thickness:&nbsp&nbsp&nbsp</label>
+    <input type="number" id="ST" name="Skin Thickness"size="15px" step=".01" required>
+</br></br>
+	<label for="Body Mass Index">Body Mass Index:</label>
+    <input type="number" id="BMI" name="Body Mass Index" size="15px" required>
+<br/><br/>
+<br/><br/>
+	<label for="Heredity">Heredity:</label>
+    <input type="radio" name="Heredity" value="yes">Your Ancestors have Diabetes.
+	<input type="radio" name="Heredity" value="No">Your Ancestors don't have Diabetes.
+<br/><br/>
+	<label for="Gender">Gender:&nbsp&nbsp</label>
+	<input type="radio" name="gender" value="male"> Male
+	<input type="radio" name="gender" value="female"> Female
+<br/><br/>
+	<label for="Pregnancies"> If female, number of pregnancies:&nbsp</label>
+	<input type="text" id="pregnancies" name="Pregnancies" value="0"  size="8px" required>
+<br/><br/>
+	<input type="submit" value="Submit" class="submit">
+</div>
+</body>
+</html>
